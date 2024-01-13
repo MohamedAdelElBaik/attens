@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-primary-100;
+  }
+
+  .user-image {
+    @apply rounded-full border-2 border-white;
+  }
+
+  .input {
+    direction: rtl;
+    @apply flex gap-2 items-center bg-white rounded-md px-3 py-2 text-gray w-fit;
+  }
+  /* .input:nth-child(2) {
+    @apply w-full outline-none; */
+  /* } */
+
+  .box {
+    @apply bg-white rounded-3xl p-4;
+  }
+
+  .button {
+    @apply rounded-2xl bg-white px-8 py-1;
+  }
+}
