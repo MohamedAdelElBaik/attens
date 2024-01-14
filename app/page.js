@@ -5,6 +5,7 @@ import Search from '@/components/Search';
 import UserImage from '@/components/UserImage';
 import WorkShiftSelect from '@/components/WorkShiftSelect';
 import Hello from '@/components/dashboard/Hello';
+import QRCode from '@/components/dashboard/QRCode';
 
 export default function Home() {
   return (
@@ -27,7 +28,8 @@ export default function Home() {
       </header>
 
       <section className="mt-6">
-        <Hello className="w-96" />
+        {/* <Hello className="w-96" /> */}
+        <QRCode className="w-96" />
       </section>
     </main>
   );
