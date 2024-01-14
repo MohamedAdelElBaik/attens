@@ -29,7 +29,7 @@
   /* } */
 
   .card {
-    @apply bg-white rounded-3xl p-4;
+    @apply bg-white rounded-3xl p-6;
   }
 
   .button {
@@ -38,5 +38,8 @@
 
   .icon-text {
     @apply flex items-center text-sm gap-2 cursor-pointer;
+  }
+
+  .hello-card {
   }
 }

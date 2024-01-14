@@ -4,6 +4,7 @@ import NotificationBtn from '@/components/NotificationBtn';
 import Search from '@/components/Search';
 import UserImage from '@/components/UserImage';
 import WorkShiftSelect from '@/components/WorkShiftSelect';
+import Hello from '@/components/dashboard/Hello';
 
 export default function Home() {
   return (
@@ -25,7 +26,9 @@ export default function Home() {
         </div>
       </header>
 
-      <section></section>
+      <section className="mt-6">
+        <Hello className="w-96" />
+      </section>
     </main>
   );
 }

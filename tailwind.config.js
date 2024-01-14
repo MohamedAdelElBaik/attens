@@ -12,6 +12,7 @@ module.exports = {
         800: 'hsla(111, 64%, 39%, 0.8)',
         600: 'hsla(111, 64%, 39%, 0.6)',
         400: 'hsla(111, 64%, 39%, 0.4)',
+        300: 'hsla(111, 64%, 39%, 0.3)',
         200: 'hsla(111, 64%, 39%, 0.2)',
         100: 'hsla(111, 64%, 39%, 0.08)',
       },
@@ -37,6 +38,9 @@ module.exports = {
         // '3xl': '1.953rem',
         '4xl': '2.25rem',
         // '5xl': '3.052rem',
+      },
+      backgroundImage: {
+        'hello-card': "url('/hello-card-background.svg')",
       },
     },
   },
