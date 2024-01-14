@@ -13,10 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="rtl">
       <body>
-        <>
-          <NavBar />
-          {children}
-        </>
+        <NavBar />
+        {children}
       </body>
     </html>
   );

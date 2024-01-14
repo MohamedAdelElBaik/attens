@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap');
 
 @layer base {
+  #rootReactVNB {
+    display: none;
+  }
+
   body {
     @apply bg-primary-100 flex;
   }
