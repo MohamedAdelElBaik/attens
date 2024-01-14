@@ -6,7 +6,10 @@
 
 @layer base {
   body {
-    @apply bg-primary-100;
+    @apply bg-primary-100 flex;
+  }
+  main {
+    width: 100%;
   }
 
   .user-image {
@@ -21,7 +24,7 @@
     @apply w-full outline-none; */
   /* } */
 
-  .box {
+  .card {
     @apply bg-white rounded-3xl p-4;
   }
 

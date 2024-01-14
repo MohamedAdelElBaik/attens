@@ -6,7 +6,7 @@ function Search() {
     <div className="input">
       <SearchIcon />
       <input
-        className="border-r-2 border-black border-opacity-20  px-2"
+        className="border-r-2 border-black border-opacity-20  px-2 outline-none"
         type="text"
         placeholder="البحث عن ..."
       />
