@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap');
 
 @layer base {
+  :root {
+    --clr-primary: hsla(111, 64%, 39%);
+  }
+
   #rootReactVNB {
     display: none;
   }
@@ -16,7 +20,8 @@
     width: 100%;
   }
 
-  button {
+  button,
+  select {
     outline: none;
   }
 
@@ -57,5 +62,9 @@
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
     z-index: 0;
+  }
+
+  .leaflet-container {
+    height: 300px;
   }
 }

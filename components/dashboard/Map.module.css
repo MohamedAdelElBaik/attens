@@ -1,0 +1,12 @@
+.div :global(.leaflet-container) {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  z-index: 10;
+  outline: none;
+}
+.div :global(.leaflet-control-zoom),
+.div :global(.leaflet-control-attribution) {
+  display: none;
+}

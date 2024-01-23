@@ -23,6 +23,7 @@ module.exports = {
       yellow: 'hsla(43, 100%, 50%, 1)',
       white: '#fff',
       gray: 'hsla(212, 15%, 51%, 1)',
+      grayLight: '#F1F5F0',
       black: '#000',
     },
     fontFamily: {
