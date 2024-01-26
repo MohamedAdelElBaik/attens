@@ -27,7 +27,7 @@ module.exports = {
       black: '#000',
     },
     fontFamily: {
-      sans: ['Readex Pro', 'sans-serif'],
+      sans: ['Readex Pro', 'arial', 'sans-serif'],
     },
     extend: {
       fontSize: {

@@ -16,9 +16,6 @@
   body {
     @apply bg-primary-100 flex;
   }
-  main {
-    width: 100%;
-  }
 
   button,
   select {

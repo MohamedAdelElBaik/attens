@@ -8,33 +8,46 @@ import DayAttendance from '@/components/dashboard/DayAttendance';
 import Hello from '@/components/dashboard/Hello';
 import Map from '@/components/dashboard/Map';
 import QRCode from '@/components/dashboard/QRCode';
+import { SelectProvider } from '@/contexts/SelectContext';
 
 export default function Home() {
   return (
-    <main className="my-6 mx-10">
-      <header className="flex justify-between ">
-        <div className="flex gap-4">
-          <BranchSelect />
-          <WorkShiftSelect />
-        </div>
-        <div className="flex gap-4">
-          <Search />
-          <MessageBtn />
-          <NotificationBtn />
-          <UserImage
-            className={'cursor-pointer mr-10'}
-            src={'/user.webp'}
-            size={50}
-          />
-        </div>
-      </header>
+    <div className="my-6 mx-10 w-full">
+      <SelectProvider>
+        <Header>
+          <Section>
+            <BranchSelect />
+            <WorkShiftSelect />
+          </Section>
+          <Section>
+            <Search />
+            <MessageBtn />
+            <NotificationBtn />
+            <UserImage
+              className={'cursor-pointer mr-10'}
+              src={'/user.webp'}
+              size={50}
+            />
+          </Section>
+        </Header>
 
-      <section className="mt-6">
-        {/* <Hello className="w-96" /> */}
-        {/* <QRCode className="w-96" /> */}
-        <Map />
-        {/* <DayAttendance /> */}
-      </section>
-    </main>
+        <Main>
+          <Hello className="w-96" />
+          {/* <QRCode className="w-96" /> */}
+          <Map />
+          {/* <DayAttendance /> */}
+        </Main>
+      </SelectProvider>
+    </div>
   );
+}
+
+function Header({ children }) {
+  return <header className="flex justify-between ">{children}</header>;
+}
+function Section({ children }) {
+  return <div className="flex gap-4">{children}</div>;
+}
+function Main({ children }) {
+  return <main className="mt-6">{children}</main>;
 }
