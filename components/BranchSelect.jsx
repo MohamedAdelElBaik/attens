@@ -3,10 +3,10 @@ import { useSelect } from '@/contexts/SelectContext';
 import LocationIcon from '@mui/icons-material/LocationOnOutlined';
 
 function BranchSelect() {
-  const { setSelectVal } = useSelect();
+  const { setLocation } = useSelect();
 
   // const handleSelect = (e) => console.log(selectVal);
-  const handleSelect = (e) => setSelectVal(e.target.value);
+  const handleSelect = (e) => setLocation(e.target.value);
 
   return (
     <div className="input">

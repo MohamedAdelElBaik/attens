@@ -20,8 +20,8 @@ const customIcon = new Icon({
 });
 
 function Map() {
-  const { selectVal } = useSelect();
-  const branch = branchesData.find((branch) => branch.branch === selectVal);
+  const { location } = useSelect();
+  const branch = branchesData.find((branch) => branch.branch === location);
 
   return (
     <div
