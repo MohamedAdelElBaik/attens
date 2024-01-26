@@ -4,7 +4,7 @@ import { useContext, createContext, useState } from 'react';
 const SelectContext = createContext(null);
 
 function SelectProvider({ children }) {
-  const [location, setLocation] = useState('ramadan');
+  const [location, setLocation] = useState('cairo');
 
   const value = { location, setLocation };
   return (
