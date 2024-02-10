@@ -14,7 +14,10 @@
   }
 
   body {
-    @apply bg-primary-100 flex;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    /* grid-template-areas: 'nav content'; */
+    @apply bg-primary-100;
   }
 
   button,
