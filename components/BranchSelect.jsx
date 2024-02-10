@@ -18,6 +18,14 @@ function BranchSelect() {
             {branch.title}
           </option>
         ))}
+        <optgroup>
+          <option
+            value="new"
+            className="bg-primary-300 h-10 font-bold cursor-pointer"
+          >
+            create new branch
+          </option>
+        </optgroup>
       </select>
     </div>
   );
